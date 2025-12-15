@@ -1,0 +1,227 @@
+.checkout-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    animation: fadeIn 0.3s ease;
+    
+}
+
+
+.checkout-header,
+.order-summary,
+.checkout-form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkout-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    border-bottom: 1px solid #333;
+    padding: 12px 0 12px;
+}
+
+.back-btn-checkout {
+    background: none;
+    border: none;
+    color: #EAC8CA;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.order-summary {
+    background-color: #1e1e1e;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.order-summary h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.05rem;
+    color: #EAC8CA;
+}
+
+.summary-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #333;
+}
+.summary-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.row-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.item-name-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qty-badge {
+    color: #1a1a1a;
+    background-color: #EAC8CA;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.row-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qty-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.ctrl-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.ctrl-btn:hover {
+    background-color: #444;
+}
+
+.ctrl-btn.delete {
+    background-color: #3a1d1d;
+    color: #ff6b6b;
+}
+.ctrl-btn.delete:hover {
+    background-color: #4d2626;
+}
+
+.divider {
+    height: 1px;
+    background-color: #333;
+    margin: 12px 0;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.total-price {
+    color: #EAC8CA;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.checkout-form h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.05rem;
+    color: #EAC8CA;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #272727;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #EAC8CA;
+}
+
+.confirm-btn {
+    width: 100%;
+    background-color: #EAC8CA;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-wrapper.light-mode .order-summary h3,
+.mobile-wrapper.light-mode .checkout-form h3,
+.mobile-wrapper.light-mode .total-price,
+.mobile-wrapper.light-mode .form-group label {
+    color: #6b3b3b;
+}
+
+.mobile-wrapper.light-mode .qty-badge {
+    background-color: #6b3b3b;
+    color: #fff;
+}
+
+.mobile-wrapper.light-mode .ctrl-btn {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.mobile-wrapper.light-mode .ctrl-btn.delete {
+    background-color: #ffeaea;
+    color: #d32f2f;
+}
+
+.mobile-wrapper.light-mode .summary-row,
+.mobile-wrapper.light-mode .divider {
+    border-color: #eee;
+}

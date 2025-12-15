@@ -1,0 +1,116 @@
+.menu-item-card {
+    background-color: transparent;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-details h3 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.mobile-wrapper.light-mode .menu-item-card .item-details h3 {
+    color: #1a1a1a;
+}
+
+.mobile-wrapper.light-mode .menu-item-card .price {
+    color: #6b3b3b; 
+}
+
+.mobile-wrapper.light-mode .count{
+    color: white;
+}
+
+.item-details .description {
+    font-size: 0.85rem;
+    color: #888;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.price-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #EAC8CA; 
+}
+
+.add-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EAC8CA;
+    border: none;
+    color: #000;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.add-btn:active {
+    transform: scale(0.9);
+}
+
+.counter-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #2a2a2a;
+    padding: 4px 6px;
+    border-radius: 30px;
+}
+
+.counter-controls button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.counter-controls .minus {
+    background-color: #3f3f3f;
+}
+
+.counter-controls .plus {
+    background-color: transparent; 
+}
+
+.counter-controls .count {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
